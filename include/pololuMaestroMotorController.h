@@ -4,7 +4,6 @@
 /**************************************
  * pololuMaestroMotorController.h
  * Matthew Bailey
- * NEEC: Navy Robot Project
  * 2014-03-25
  *
  * This file describes an interface
