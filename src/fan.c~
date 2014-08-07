@@ -1,0 +1,17 @@
+
+#include "fan.h"
+
+FanController::FanController() {}
+FanController::FanController(PololuMaestroMotorController* m) {
+	mc = m;
+}
+
+FanController::~FanController() {
+}
+
+double FanController::setSpeed(double speed, int dev) {
+	int target = (int)(4*speed);
+   	mc->setTarget(dev, target);
+	return speed;
+}
+
