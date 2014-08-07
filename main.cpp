@@ -1,13 +1,3 @@
-/* 
-Navy Drone Project
-
-Marc Murphy 
-Peter Quan 
-Yosub Lee
-Mohammad Rezwanul Islam 
-Arun Rai 
-Xin Gan
-*/ 
 
 #include <iostream>
 #include <iomanip>
