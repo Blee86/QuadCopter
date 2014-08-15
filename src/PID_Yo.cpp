@@ -126,7 +126,7 @@ double PID::compute(double input)
 				m_iTerm = m_outMin;
 			double dInput = (m_input - m_lastInput);
 			// Compute PID Output
-			m_output = kp * error + ki * m_iTerm + kd * dInput;
+			m_output = kp * error + ki * m_iTerm - kd * dInput;
 			if(m_output > m_outMax)
 				m_output = m_outMax;
 			else if(m_output < m_outMin)
@@ -158,7 +158,7 @@ double PID::compute(double input)
 		m_iTerm = m_outMin;
 	double dInput = (m_input - m_lastInput);
 	// Compute PID Output
-	m_output = kp * error + ki * m_iTerm + kd * dInput;
+	m_output = kp * error + ki * m_iTerm - kd * dInput;
 	if(m_output > m_outMax)
 		m_output = m_outMax;
 	else if(m_output < m_outMin)
